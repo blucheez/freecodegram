@@ -9,8 +9,9 @@
             </div>
         </div>
         <div class="col-9 ps-5">
-            <div class="profile-title">
+            <div class="profile-title d-flex justify-content-between align-items-baseline">
                 <h1>{{$user->username}}</h1>
+                <a href="#">Add New Post</a>
             </div>
             <div class="profile-stats d-flex mt-4">
                 <div class="div me-2"><strong>500</strong> bejegyzés</div>
