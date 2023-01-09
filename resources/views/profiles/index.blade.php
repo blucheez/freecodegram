@@ -11,10 +11,10 @@
         <div class="col-9 ps-5">
             <div class="profile-title d-flex justify-content-between align-items-baseline">
                 <h1>{{$user->username}}</h1>
-                <a href="#">Add New Post</a>
+                <a href="/p/create">Add New Post</a>
             </div>
             <div class="profile-stats d-flex mt-4">
-                <div class="div me-2"><strong>500</strong> bejegyzés</div>
+                <div class="div me-2"><strong>{{$user->posts->count()}}</strong> bejegyzés</div>
                 <div class="div me-2"><strong>120e</strong> követő</div>
                 <div class="div me-2"><strong>350</strong> követés</div>
             </div>
@@ -26,6 +26,15 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row mt-4">
+        @foreach ($user->posts as $post)
+        <div class="col-4 pb-4">
+            <a href="/p/{{$post->id}}">
+                <img class="w-100" src="/storage/{{$post->image}}" alt="">
+            </a>
+        </div>
+        @endforeach
     </div>
 </div>
 @endsection
