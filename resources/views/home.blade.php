@@ -10,7 +10,7 @@
         </div>
         <div class="col-9 ps-5">
             <div class="profile-title">
-                <h1>freecodecamp</h1>
+                <h1>{{$user->username}}</h1>
             </div>
             <div class="profile-stats d-flex mt-4">
                 <div class="div me-2"><strong>500</strong> bejegyzés</div>
