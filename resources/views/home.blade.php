@@ -18,12 +18,10 @@
                 <div class="div me-2"><strong>350</strong> követés</div>
             </div>
             <div class="profile-desc mt-4">
-                <div class="fw-bold">freeCodeCamp.org</div>
-                <div>We're a global community of millions of people learning to code together.</div>
+                <div class="fw-bold">{{$user->profile->title}}</div>
+                <div>{{$user->profile->description}}</div>
                 <div>
-                    LearnToCodeRPG: https://www.freecodecamp.org/news/learn-to-code-rpg/</div>
-                <div>
-                    <a href="https://www.freecodecamp.org/" target="_blank">www.freecodecamp.org</a>
+                    <a href="https://www.freecodecamp.org/" target="_blank">{{$user->profile->url}}</a>
                 </div>
             </div>
         </div>
