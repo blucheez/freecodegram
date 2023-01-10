@@ -11,9 +11,13 @@
         <div class="col-9 ps-5">
             <div class="profile-title d-flex justify-content-between align-items-baseline">
                 <h1>{{$user->username}}</h1>
+                @can('update', $user->profile)
                 <a href="/p/create">Add New Post</a>
+                @endcan
             </div>
+            @can('update', $user->profile)
             <a href="/profile/{{$user->id}}/edit">Edit Profile</a>
+            @endcan
             <div class="profile-stats d-flex mt-4">
                 <div class="div me-2"><strong>{{$user->posts->count()}}</strong> bejegyzés</div>
                 <div class="div me-2"><strong>120e</strong> követő</div>
