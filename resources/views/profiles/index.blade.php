@@ -4,8 +4,8 @@
 <div class="container">
     <div class="row">
         <div class="col-3 d-flex justify-content-center align-items-center">
-            <div class="profile-img-container d-flex justify-content-center align-items-center">
-                <img src="/assets/fcc_logo.png" alt="">
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="/storage/{{$user->profile->image}}" alt="" class="rounded-circle w-75">
             </div>
         </div>
         <div class="col-9 ps-5">

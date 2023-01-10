@@ -27,6 +27,21 @@
   width: 120px;
 }
 
+.post-profile-img img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.container.post a {
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  color: #000;
+}
+
+.container.post .follow-link {
+  color: rgb(87, 188, 228);
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
