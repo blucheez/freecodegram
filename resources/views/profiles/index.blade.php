@@ -13,7 +13,7 @@
                 <div class="d-flex align-items-center">
                     <h1 class="display-6">{{$user->username}}</h1>
 
-                    <follow-button user-id="{{$user->id}}"></follow-button>
+                    <follow-button user-id="{{$user->id}}" follows={{$follows}}></follow-button>
                 </div>
                 @can('update', $user->profile)
                 <a href="/p/create">Add New Post</a>
@@ -24,8 +24,8 @@
             @endcan
             <div class="profile-stats d-flex mt-4">
                 <div class="div me-2"><strong>{{$user->posts->count()}}</strong> bejegyzés</div>
-                <div class="div me-2"><strong>120e</strong> követő</div>
-                <div class="div me-2"><strong>350</strong> követés</div>
+                <div class="div me-2"><strong>{{$user->profile->followers->count()}}</strong> követő</div>
+                <div class="div me-2"><strong>{{$user->following->count()}}</strong> követés</div>
             </div>
             <div class="profile-desc mt-4">
                 <div class="fw-bold">{{$user->profile->title}}</div>
