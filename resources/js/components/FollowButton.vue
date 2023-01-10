@@ -1,0 +1,24 @@
+<template>
+  <div>
+    <button class="btn btn-primary text-white ms-3" @click="followUser">
+      Follow
+    </button>
+  </div>
+</template>
+
+<script>
+import Axios from 'axios'
+
+export default {
+  props: ['userId'],
+
+  mounted() {
+    console.log('Component mounted.')
+  },
+  methods: {
+    followUser() {
+      Axios.post('/follow/' + this.userId).then((response) => console.log(response.data))
+    },
+  },
+}
+</script>
