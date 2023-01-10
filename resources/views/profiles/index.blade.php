@@ -13,6 +13,7 @@
                 <h1>{{$user->username}}</h1>
                 <a href="/p/create">Add New Post</a>
             </div>
+            <a href="/profile/{{$user->id}}/edit">Edit Profile</a>
             <div class="profile-stats d-flex mt-4">
                 <div class="div me-2"><strong>{{$user->posts->count()}}</strong> bejegyzés</div>
                 <div class="div me-2"><strong>120e</strong> követő</div>

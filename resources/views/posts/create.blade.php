@@ -26,7 +26,7 @@
 
 
                 <div class="row">
-                    <label for="name" class="col-md-4 col-form-label ">Post caption</label>
+                    <label for="name" class="col-md-4 col-form-label ">Image</label>
                     <input type="file" name="image" id="image" class="form-control">
                     @error('image')
 
